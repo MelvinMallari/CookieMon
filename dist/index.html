@@ -5,25 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Passion+One" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Passion+One|Press+Start+2P" rel="stylesheet">  
   <style type="text/css">
     canvas {
       border: 1px solid black;
       background: black;
     }
-
     .canvas-container {
       display: flex;
       justify-content: center;
     }
+    .game-header {
+      font-family: "PacFont"
+    }
+    .instructions {
+      display: block;
+    }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
+  <!-- <div class="instructions">
+    <h1>Welcome to Cookie-Mon!</h1>
+  </div> -->
+
   <div class="canvas-container">
+    <!-- <h1 class="game-header">Cookie-Mon</h1> -->
     <canvas id='canvas'></canvas> 
   </div>
+  
   <script src='../lib/bundle.js'></script>
 </body>
 </html>
