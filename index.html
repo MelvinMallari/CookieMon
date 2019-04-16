@@ -21,20 +21,24 @@
 
     .canvas-container {
       display: flex;
-      justify-content: flex-start;
-      margin-left: 100px;
+      justify-content: center;
     }
 
     .instructions {
-      margin-top: 75px;
       margin-right: 50px;
+      height: 786px;
+      display: flex;
+      flex-direction: column; 
+      line-height: 22px;
+      justify-content: center;
     }
 
     .game-title {
       font-family: "PacFont";
       color: #fff;
       margin-bottom: 20px;
-      display: inline-block;
+      display: flex;
+      justify-content: center;
     }
 
     .instructions p {
@@ -42,10 +46,17 @@
       color: #fff;
       max-width: 400px;
     }
+
     .fa-icon {
       color: #fff;
       margin-right: 20px;
     }
+
+    .links-footer {
+      display: flex;
+      justify-content: center;
+    }
+
 
   </style>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -62,15 +73,17 @@
       <p>Press P to pause </p>
       <p>Have fun!</p>
       <p>Created by Melvin Mallari</p>
-      <a href="https://github.com/MelvinMallari/CookieMon">
-          <i class="fab fa-github-square fa-2x fa-icon"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/melvinmallari/">
-        <i class="fab fa-linkedin fa-2x fa-icon"></i>
-      </a>
-      <a href="https://melvinmallari.com/">
-        <i class="fas fa-address-card fa-2x fa-icon"></i>
-      </a>
+      <footer class="links-footer">
+        <a href="https://github.com/MelvinMallari/CookieMon">
+            <i class="fab fa-github-square fa-2x fa-icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/melvinmallari/">
+          <i class="fab fa-linkedin fa-2x fa-icon"></i>
+        </a>
+        <a href="https://melvinmallari.com/">
+          <i class="fas fa-address-card fa-2x fa-icon"></i>
+        </a>
+      </footer>
     </div>
     <canvas id='canvas'></canvas> 
   </div>
