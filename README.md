@@ -16,6 +16,7 @@ A remake of the classic game Pac-Man headlining none other than the Cookie-Monst
 
 #### Collision Detection
 Collision detection anticipates the next possible step, using the graph used to build the maze, determines whether anticipated step is a wall (represented as a '0' in the graph).
+
 ```js
   willCollide(pos, dir) {
     let blockSize = Loader.BLOCK_SIZE;
@@ -28,6 +29,7 @@ Collision detection anticipates the next possible step, using the graph used to 
 
 #### Pathfinding Algorithm
   The path-finding algorithm considers each possible direction, and selects the one that brings the ghost closest to the target. 
+
   ```js
   target(pos) {
     const directions = DEFAULTS.directions;
