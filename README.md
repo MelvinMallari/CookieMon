@@ -3,7 +3,7 @@
 [Live Link](https://melvinmallari.github.io/CookieMon/)
 
 ### Overview
-A remake of the classic game Pac-Man headlining none other than the Cookie-Monster himself. Users complete the game by consuming all pellets. Power pellets tranform the ghosts into cookies, rendering them edible. Similar to original game, each ghost features its own path-finding strategy, creating an interesting dynamic. Find out if you can get the pellets before the ghosts get you!
+A remake of the classic game Pac-Man headlining none other than the Cookie-Monster himself. Users complete the game by consuming all pellets. Power pellets tranform the ghosts into cookies, rendering them edible. Similar to original game, each ghost features its own path-finding strategy, creating an interesting dynamic. Find out if you can get all the pellets before the ghosts get you!
 
   <p align="center">
     <img src="./assets/CookieMon-Gameplay.gif" align="center">
@@ -16,7 +16,8 @@ A remake of the classic game Pac-Man headlining none other than the Cookie-Monst
 ### Features
  * Collision Detection algorithm - Obstacle & Sprite collisions
  * 4 Pathfinding Algorithm - One for each ghost
-
+ * Score System - Players earn poins based on their play 
+ * Lives - Each player gets three lives to complete the game
 
 #### Collision Detection
 Collision detection anticipates the next possible step, using the graph used to build the maze, determines whether anticipated step is a wall (represented as a '0' in the graph).
