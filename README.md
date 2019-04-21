@@ -62,3 +62,9 @@ Collision detection anticipates the next possible step, using the graph used to 
       }
     }
   ```
+
+  #### Future Improvements 
+  * Incorporate djikstra / BFS path finding
+  * Refine wall detection algo
+  * Incorporate Audio
+
