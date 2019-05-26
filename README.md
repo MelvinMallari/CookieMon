@@ -11,7 +11,7 @@ A remake of the classic game Pac-Man headlining none other than the Cookie-Monst
 
 ### Technologies
  * HTML Canvas, CSS - To build the visual interface
- * Javascript (ES 6) - To build the game logic
+ * Javascript (ES 5+) - To build the game logic
 
 ### Features
  * Collision Detection algorithm - Obstacle & Sprite collisions
