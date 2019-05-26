@@ -1,93 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Passion+One|Press+Start+2P" rel="stylesheet">  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <style type="text/css">
-    body {
-      background: black;
-      margin: 0;
-      padding: 0;
-    }
-    canvas {
-      background: black;
-      padding: 0px;
-      margin: 0px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Passion+One|Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      @font-face {
+        font-family: PacFont;
+        src: url("pac-font.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: Pixel Emulator;
+        src: url("Pixel Emulator.otf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
+      body {
+        background: black;
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        background: black;
+        padding: 0px;
+        margin: 0px;
+      }
 
-    .canvas-container {
-      display: flex;
-      justify-content: center;
-    }
+      .canvas-container {
+        display: flex;
+        justify-content: center;
+      }
 
-    .instructions {
-      margin-right: 50px;
-      height: 786px;
-      display: flex;
-      flex-direction: column; 
-      line-height: 22px;
-      justify-content: center;
-    }
+      .instructions {
+        margin-right: 50px;
+        height: 786px;
+        display: flex;
+        flex-direction: column;
+        line-height: 22px;
+        justify-content: center;
+      }
 
-    .game-title {
-      font-family: "PacFont";
-      color: #fff;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-    }
+      .game-title {
+        font-family: "PacFont";
+        color: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
 
-    .instructions p {
-      font-family: "Press Start 2P";
-      color: #fff;
-      max-width: 400px;
-    }
+      .instructions p {
+        font-family: "Press Start 2P";
+        color: #fff;
+        max-width: 400px;
+      }
 
-    .fa-icon {
-      color: #fff;
-      margin-right: 20px;
-    }
+      .fa-icon {
+        color: #fff;
+        margin-right: 20px;
+      }
 
-    .links-footer {
-      display: flex;
-      justify-content: center;
-    }
-
-
-  </style>
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
-<body>
-
-  <div class="canvas-container">
-    <div class="instructions">
-      <h1 class="game-title">Cookie-Mon</h1>
-      <p>Welcome to Cookie-Mon!</p>
-      <p>A few things to know before you start: </p>
-      <p>Press spacebar to start the game</p>
-      <p>WASD or arrow keys to move  </p>
-      <p>Press P to pause </p>
-      <p>Have fun!</p>
-      <p>Created by Melvin Mallari</p>
-      <footer class="links-footer">
-        <a href="https://github.com/MelvinMallari/CookieMon">
+      .links-footer {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="canvas-container">
+      <div class="instructions">
+        <h1 class="game-title">Cookie-Mon</h1>
+        <p>Welcome to Cookie-Mon!</p>
+        <p>A few things to know before you start:</p>
+        <p>Press spacebar to start the game</p>
+        <p>WASD or arrow keys to move</p>
+        <p>Press P to pause</p>
+        <p>Have fun!</p>
+        <p>Created by Melvin Mallari</p>
+        <footer class="links-footer">
+          <a href="https://github.com/MelvinMallari/CookieMon">
             <i class="fab fa-github-square fa-2x fa-icon"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/melvinmallari/">
-          <i class="fab fa-linkedin fa-2x fa-icon"></i>
-        </a>
-        <a href="https://melvinmallari.com/">
-          <i class="fas fa-address-card fa-2x fa-icon"></i>
-        </a>
-      </footer>
+          </a>
+          <a href="https://www.linkedin.com/in/melvinmallari/">
+            <i class="fab fa-linkedin fa-2x fa-icon"></i>
+          </a>
+          <a href="https://melvinmallari.com/">
+            <i class="fas fa-address-card fa-2x fa-icon"></i>
+          </a>
+        </footer>
+      </div>
+      <canvas id="canvas"></canvas>
     </div>
-    <canvas id='canvas'></canvas> 
-  </div>
-  
-  <script src='lib/bundle.js'></script>
-</body>
+
+    <script src="lib/bundle.js"></script>
+  </body>
 </html>
